@@ -1,0 +1,62 @@
+main{
+    padding: 6rem 10%;
+    background: url('../../assets/images/section-BG/Wavey3.svg');
+}
+section{
+    position: relative;
+    background-color: white;
+}
+
+img{
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+}
+
+.post-desc > *{
+ position: relative;
+}
+
+.pic{
+    width: 100%;
+}
+
+.desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.post-desc h4{font-size: var(--text); color: gray;}
+.post-desc h3{font-size: var(--biggerText); color: gray;}
+.post-desc h1{font-size: var(--biggestText);}
+
+.title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.title h1{padding: 1rem 4rem;background-color: rgb(255, 255, 255);z-index: 3;}
+
+.title:before{
+    content: '';
+    border: rgb(61, 61, 61) 1px solid;
+    position: absolute;
+    height: 0;
+    width: 80%;
+    top: calc(50% - 1px);
+    z-index: 2;
+
+    
+}

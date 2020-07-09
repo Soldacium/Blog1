@@ -1,0 +1,48 @@
+<div class="bonus">
+
+</div>
+<main>
+    
+    <header>
+        <h1>
+            Styly
+        </h1>
+        <img src="../../assets/icons/flower (1).svg" alt="">
+    </header>
+    <nav>
+        <ul class="links">
+            <li><a [routerLink]='["welcome"]' [ngClass]="(router.isActive('contact')==true)?'active':'naah'">Posts</a></li>
+            <li><a [routerLink]='["contact"]' [ngClass]="(router.isActive('contact')==true)?'active':'naah'">Coaching</a></li>
+            <li><a [routerLink]='["about"]' [ngClass]="(router.isActive('contact')==true)?'active':'naah'">About</a></li>
+            <li><a [routerLink]='["contact"]' [ngClass]="(router.isActive('contact')==true)?'active':'naah'">Contact</a></li>
+        </ul>
+
+        <div class="search">
+
+        </div>
+
+
+    </nav>
+    <div class="hamburger" (click)='change()'
+    [ngClass]="active ? 'active' : 'naah' ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+
+
+</main>
+<div class="overlay" [ngClass]="active ? 'visible' : 'naah'">
+    <div class="nav2">
+        <ul >
+            <li><a (click) = 'change()' [routerLink]='["welcome"]' [ngClass]="(router.isActive('contact')==true)?'active':'naah'">Posts</a></li>
+            <li><a (click) = 'change()' [routerLink]='["contact"]' [ngClass]="(router.isActive('contact')==true)?'active':'naah'">Coaching</a></li>
+            <li><a (click) = 'change()' [routerLink]='["about"]' [ngClass]="(router.isActive('contact')==true)?'active':'naah'">About</a></li>
+            <li><a (click) = 'change()' [routerLink]='["contact"]' [ngClass]="(router.isActive('contact')==true)?'active':'naah'">Contact</a></li>
+        </ul>
+    </div>
+</div>
+    

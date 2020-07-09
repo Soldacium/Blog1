@@ -1,0 +1,54 @@
+<main>
+    
+    <section class="popular" >
+        <div class="popular-posts">
+            <div class="most-popular post">
+                <img src="../../assets/images/posts-BG/cool1.jpg" alt="">
+                <div class="text">
+                    <h3>How does achive one greatness?</h3>
+                    <p>20-06-2020</p>
+                </div>
+            </div>
+
+            <div class="more-popular post">
+                <img src="../../assets/images/posts-BG/cool2.jpg" alt="">
+                <div class="text">
+                    <h3>How does achive one greatness?</h3>
+                    <p>20-06-2020</p>
+                </div>
+            </div>
+            <div class="more-popular post">
+                <img src="../../assets/images/posts-BG/cool3.jpg" alt="">
+                <div class="text">
+                    <h3>How does achive one greatness?</h3>
+                    <p>20-06-2020</p>
+                </div>
+            </div>            
+        </div>
+
+    </section>
+    <header >
+        <h2>
+            Explore
+        </h2>
+    </header >
+    <section class="allPosts">
+        <div class="post" *ngFor='let post of posts' (click)='viewPost(post)'>
+            <img src={{post}} alt="" >
+            <div class="text">
+                <h3>How does achive one greatness?</h3>
+                <p>20-06-2020</p>
+            </div>
+        </div>
+    </section>
+    <section class="sideNav">
+        <div class="bonus1"></div>
+        <div class="bonus2"></div>
+    </section>
+    <section class="choosePage">
+        <div class="prev"></div>
+        <div class="page" *ngFor='let page of pages' (click)='goToPage()'></div>
+
+        <div class="next"></div>
+    </section>
+</main>
